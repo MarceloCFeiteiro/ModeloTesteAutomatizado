@@ -1,0 +1,3 @@
+{
+"Sexo":"M","PrimeiroNome":"Yago","UltimoNome":"Oliveira","Password":"aaa123","NomeCompleto":"Yago Oliveira","Email":"Yago20@live.com","DataAniversario":"2000-11-01T10:46:27.6447458-03:00","Empresa":"Barros - Macedo","EmpresaEndereco":"5516 Eduarda Marginal","Cidade":"Samuel","Estado":"Idaho","Cep":"12345","Pais":"United States","InformacaoAdicional":"Iusto voluptatem sit aliquid ut error odio iusto.","TelefoneComDDD":"(23)34732957","CelularComDDD":"(55)947345729","EnderecoAlternativo":"Work"
+}
