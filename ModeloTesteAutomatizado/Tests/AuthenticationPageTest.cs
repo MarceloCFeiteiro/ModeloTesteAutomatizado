@@ -7,6 +7,18 @@ namespace ModeloTesteAutomatizado.Tests
 {
     public class AuthenticationTest : BaseTeste
     {
+        //[SetUp]
+        //public void Inicializar()
+        //{
+        //    CriaRelatorioHelper.CriaTeste();
+        //}
+
+        //[TearDown]
+        //public void Finalizar()
+        //{
+        //    CriaRelatorioHelper.FinalizaRelatorio(driver);
+        //}
+
         [Test]
         [Retry(2)]
         public void LoginComUsuarioEPasswordCorretos()
@@ -130,11 +142,6 @@ namespace ModeloTesteAutomatizado.Tests
             Assert.AreEqual(login.RetornaMensagemCampoRequerido(), "*Required field", "A mensagem esta diferente do esperado.");
             var listaErrosPagina = login.RetornaListadeErros();
             Assert.AreEqual(listaErros, listaErrosPagina);
-
-            //for (int i = 0; i < listaErros.Count; i++)
-            //{
-            //    listaErros[i].Equals(listaErrosPagina[i]);
-            //}
 
             #endregion Assert
         }

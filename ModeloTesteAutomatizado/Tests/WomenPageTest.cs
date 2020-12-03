@@ -6,6 +6,18 @@ namespace ModeloTesteAutomatizado.Tests
 {
     public class WomenPageTest : BaseTeste
     {
+        //[SetUp]
+        //public void Inicializar()
+        //{
+        //    CriaRelatorioHelper.CriaTeste();
+        //}
+
+        //[TearDown]
+        //public void Finalizar()
+        //{
+        //    CriaRelatorioHelper.FinalizaRelatorio(driver);
+        //}
+
         [Test]
         [Retry(2)]
         public void AdicionarItemNoCarrinho()

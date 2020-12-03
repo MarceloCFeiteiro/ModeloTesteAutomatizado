@@ -1,8 +1,5 @@
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.AssemblyInfoInputs.cache
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.AssemblyInfo.cs
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.csproj.CoreCompileInputs.cache
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -163,8 +160,11 @@ C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\D
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\runtimes\win-x64\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\runtimes\win-x86\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.csprojAssemblyReference.cache
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.AssemblyInfoInputs.cache
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.AssemblyInfo.cs
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.csproj.CoreCompileInputs.cache
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.csproj.CopyComplete
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.pdb
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.genruntimeconfig.cache
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\obj\Debug\netcoreapp3.1\ModeloTesteAutomatizado.csprojAssemblyReference.cache

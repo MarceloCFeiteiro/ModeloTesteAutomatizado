@@ -13,7 +13,7 @@ namespace ModeloTesteAutomatizado.Helpers
         /// <summary>
         /// Representa o nome do arquivo
         /// </summary>
-        private static readonly string NomeArquivo = @"Usuario.txt";
+        private static readonly string NomeArquivo = @"Usuario.json";
 
         /// <summary>
         /// Método responsável por salvar um registro no arquivo em formato json.
