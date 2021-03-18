@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {}
+    "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {
+    "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
+        "projectUniqueName": "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
         "projectName": "ModeloTesteAutomatizado",
-        "projectPath": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
+        "projectPath": "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
         "packagesPath": "C:\\Users\\Eshi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\obj\\",
+        "outputPath": "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Eshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -46,7 +46,7 @@
           "dependencies": {
             "Bogus": {
               "target": "Package",
-              "version": "[32.0.1, )"
+              "version": "[33.0.2, )"
             },
             "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
@@ -58,11 +58,11 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.8.3, )"
+              "version": "[16.9.1, )"
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.12.0, )"
+              "version": "[3.13.1, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
@@ -78,7 +78,7 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[87.0.4280.8800, )"
+              "version": "[89.0.4389.2300, )"
             }
           },
           "imports": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
