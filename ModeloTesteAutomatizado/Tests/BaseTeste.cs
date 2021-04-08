@@ -17,9 +17,7 @@ namespace ModeloTesteAutomatizado.Tests
         {
             CriaRelatorioHelper.CriaRelatorio(this.GetType().Name);
 
-            ChromeOptions opt = new ChromeOptions();
-            opt.AddArgument("--headless");
-            driver = new ChromeDriver(opt);
+            driver = WebDriverFactory.CreateWebDriver(WebDriverEnum.HeadlessChrome);
         }
 
         [SetUp]
