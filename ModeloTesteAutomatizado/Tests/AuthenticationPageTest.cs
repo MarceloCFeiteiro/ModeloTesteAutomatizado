@@ -1,5 +1,6 @@
 ﻿using ModeloTesteAutomatizado.Helpers;
 using ModeloTesteAutomatizado.Pages.PagesCode;
+using ModeloTesteAutomatizado.Resources;
 using NUnit.Framework;
 using System.Collections.Generic;
 
@@ -7,27 +8,34 @@ namespace ModeloTesteAutomatizado.Tests
 {
     public class AuthenticationTest : BaseTeste
     {
-        //[SetUp]
-        //public void Inicializar()
-        //{
-        //    CriaRelatorioHelper.CriaTeste();
-        //}
+        private AuthenticationPage authenticationPage;
+        private IndexPage index;
 
-        //[TearDown]
-        //public void Finalizar()
-        //{
-        //    CriaRelatorioHelper.FinalizaRelatorio(driver);
-        //}
+        [SetUp]
+        public void Setup()
+        {
+            authenticationPage = new AuthenticationPage(driver);
+            index = new IndexPage(driver);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            if (!TestContext.CurrentContext.Test.Name.Contains("Incorretos")
+                && !TestContext.CurrentContext.Test.Name.Contains("Mensagem"))
+            {
+                index.NavegaParaPagina(Resource.UrlPrincipal);
+                index.ClickBtnSign_Out();
+            }
+        }
 
         [Test]
         [Retry(2)]
-        public void LoginComUsuarioEPasswordCorretos()
+        public void AuthenticationPageComUsuarioEPasswordCorretos()
         {
             #region Arranje
 
-            IndexPage index = new IndexPage(driver);
             MyAccountPage myAccountPage = new MyAccountPage(driver);
-            AuthenticationPage login = new AuthenticationPage(driver);
 
             var User = ManipularArquivoHelper.LerDeUmArquivoQueEstaNoFormatoJson();
 
@@ -38,9 +46,9 @@ namespace ModeloTesteAutomatizado.Tests
             index.NavegaParaPagina(Resources.Resource.UrlPrincipal);
 
             index.ClickBtnSign_in();
-            login.PreencheCampoEmail(User.Email);
-            login.PreencheCampoPassword(User.Password);
-            login.ClickBtnSign_in();
+            authenticationPage.PreencheCampoEmail(User.Email);
+            authenticationPage.PreencheCampoPassword(User.Password);
+            authenticationPage.ClickBtnSign_in();
 
             #endregion Act
 
@@ -49,62 +57,44 @@ namespace ModeloTesteAutomatizado.Tests
             Assert.AreEqual(myAccountPage.RetornaTextoDaMensagem(), "MY ACCOUNT");
 
             #endregion Assert
-
-            #region Finalization
-
-            index.ClickBtnSign_Out();
-
-            #endregion Finalization
         }
 
         [Test]
         [Retry(2)]
-        public void LoginComUsuarioEPasswordIncorretos()
+        public void AuthenticationPageComUsuarioEPasswordIncorretos()
         {
-            #region Arranje
-
-            AuthenticationPage login = new AuthenticationPage(driver);
-
-            #endregion Arranje
-
             #region Act
 
-            login.NavegaParaPagina(Resources.Resource.UrlAuthentication);
-            login.PreencheCampoEmail("Email@Email.com.br");
-            login.PreencheCampoPassword("SuperSecretPassword!");
-            login.ClickBtnSign_in();
+            authenticationPage.NavegaParaPagina(Resources.Resource.UrlAuthentication);
+            authenticationPage.PreencheCampoEmail("Email@Email.com.br");
+            authenticationPage.PreencheCampoPassword("SuperSecretPassword!");
+            authenticationPage.ClickBtnSign_in();
 
             #endregion Act
 
             #region Assert
 
-            Assert.AreEqual(login.RetornaTextoDaMensagem(), "Authentication failed.");
+            Assert.AreEqual(authenticationPage.RetornaTextoDaMensagem(), "Authentication failed.");
 
             #endregion Assert
         }
 
         [Test]
         [Retry(1)]
-        public void LoginComUsuarioEPasswordIncorretosFail()
+        public void AuthenticationPageComUsuarioEPasswordIncorretosFail()
         {
-            #region Arranje
-
-            AuthenticationPage login = new AuthenticationPage(driver);
-
-            #endregion Arranje
-
             #region Act
 
-            login.NavegaParaPagina(Resources.Resource.UrlAuthentication);
-            login.PreencheCampoEmail("Email@Email.com.br");
-            login.PreencheCampoPassword("SuperSecretPassword!");
-            login.ClickBtnSign_in();
+            authenticationPage.NavegaParaPagina(Resources.Resource.UrlAuthentication);
+            authenticationPage.PreencheCampoEmail("Email@Email.com.br");
+            authenticationPage.PreencheCampoPassword("SuperSecretPassword!");
+            authenticationPage.ClickBtnSign_in();
 
             #endregion Act
 
             #region Assert
 
-            Assert.AreEqual(login.RetornaTextoDaMensagem(), "Authentication failed.", "Mensagem com erro para simular uma falha");
+            Assert.AreEqual(authenticationPage.RetornaTextoDaMensagem(), "Authentication failed.", "Mensagem com erro para simular uma falha");
 
             #endregion Assert
         }
@@ -115,7 +105,6 @@ namespace ModeloTesteAutomatizado.Tests
         {
             #region Arranje
 
-            AuthenticationPage login = new AuthenticationPage(driver);
             var usuario = GerarUsuarioHelper.GerarUsuario();
             var listaErros = new List<string> { "You must register at least one phone number.",
                                                 "lastname is required.",
@@ -130,17 +119,17 @@ namespace ModeloTesteAutomatizado.Tests
 
             #region Act
 
-            login.NavegaParaPagina(Resources.Resource.UrlAuthentication);
-            login.PreencheCampoEmailCreateAccount(usuario.Email);
-            login.ClickBtnCreateAccount();
-            login.ClickBtnRegisterAnAccount();
+            authenticationPage.NavegaParaPagina(Resources.Resource.UrlAuthentication);
+            authenticationPage.PreencheCampoEmailCreateAccount(usuario.Email);
+            authenticationPage.ClickBtnCreateAccount();
+            authenticationPage.ClickBtnRegisterAnAccount();
 
             #endregion Act
 
             #region Assert
 
-            Assert.AreEqual(login.RetornaMensagemCampoRequerido(), "*Required field", "A mensagem esta diferente do esperado.");
-            var listaErrosPagina = login.RetornaListadeErros();
+            Assert.AreEqual(authenticationPage.RetornaMensagemCampoRequerido(), "*Required field", "A mensagem esta diferente do esperado.");
+            var listaErrosPagina = authenticationPage.RetornaListadeErros();
             Assert.AreEqual(listaErros, listaErrosPagina);
 
             #endregion Assert
@@ -148,11 +137,11 @@ namespace ModeloTesteAutomatizado.Tests
 
         [Test]
         [Retry(1)]
+        [Order(1)]
         public void ValidarCadastroDeUsuario()
         {
             #region Arranje
 
-            AuthenticationPage login = new AuthenticationPage(driver);
             MyAccountPage myAccount = new MyAccountPage(driver);
             var usuario = GerarUsuarioHelper.GerarUsuario();
 
@@ -160,11 +149,11 @@ namespace ModeloTesteAutomatizado.Tests
 
             #region Act
 
-            login.NavegaParaPagina(Resources.Resource.UrlAuthentication);
-            login.PreencheCampoEmailCreateAccount(usuario.Email);
-            login.ClickBtnCreateAccount();
-            login.PreecherDadosUsuario(usuario);
-            login.ClickBtnRegisterAnAccount();
+            authenticationPage.NavegaParaPagina(Resources.Resource.UrlAuthentication);
+            authenticationPage.PreencheCampoEmailCreateAccount(usuario.Email);
+            authenticationPage.ClickBtnCreateAccount();
+            authenticationPage.PreecherDadosUsuario(usuario);
+            authenticationPage.ClickBtnRegisterAnAccount();
 
             #endregion Act
 
