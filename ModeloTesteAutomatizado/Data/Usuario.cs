@@ -1,5 +1,4 @@
 ﻿using Bogus;
-using Bogus.Extensions.Brazil;
 using System;
 
 namespace ModeloTesteAutomatizado.Data

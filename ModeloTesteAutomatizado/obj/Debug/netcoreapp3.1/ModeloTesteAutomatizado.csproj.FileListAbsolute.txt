@@ -1,5 +1,6 @@
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -73,7 +74,6 @@ C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\D
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
-C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll
 C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll

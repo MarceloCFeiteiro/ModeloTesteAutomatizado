@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nf9yhP5ilpBYmAAd2hvSZDKvVpY7PVi45rUVvvia5hWM1WBiCBZWhei/wSlPTLxjQWnpfzFvNfVjdS1HxDl8JQ==",
+  "dgSpecHash": "bDzmUCQExjwHGINQTfeKU3D5NeQyNBNY71N8okoyEJWCasY53scHNJBhioEE/XvVzZj2pc/Kib3TGShgVoUsEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eshi\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
+  "projectFilePath": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eshi\\.nuget\\packages\\bogus\\33.0.2\\bogus.33.0.2.nupkg.sha512",
     "C:\\Users\\Eshi\\.nuget\\packages\\dnsclient\\1.2.0\\dnsclient.1.2.0.nupkg.sha512",

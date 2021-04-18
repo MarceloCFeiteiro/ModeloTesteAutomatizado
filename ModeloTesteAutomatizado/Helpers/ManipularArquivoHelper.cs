@@ -9,7 +9,7 @@ namespace ModeloTesteAutomatizado.Helpers
         /// Representa o caminho para o arquivo;
         /// </summary>
         private static readonly string Caminho = @"C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\Data\Files\";
-        
+
         /// <summary>
         /// Representa o nome do arquivo
         /// </summary>
