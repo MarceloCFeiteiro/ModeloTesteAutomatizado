@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {}
+    "C:\\Users\\Marcelo\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {
+    "C:\\Users\\Marcelo\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
+        "projectUniqueName": "C:\\Users\\Marcelo\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
         "projectName": "ModeloTesteAutomatizado",
-        "projectPath": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
-        "packagesPath": "C:\\Users\\Eshi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eshi\\source\\repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\obj\\",
+        "projectPath": "C:\\Users\\Marcelo\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado.csproj",
+        "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcelo\\Source\\Repos\\ModeloTesteAutomatizado\\ModeloTesteAutomatizado\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Eshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

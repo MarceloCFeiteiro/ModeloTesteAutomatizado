@@ -65,7 +65,7 @@ namespace ModeloTesteAutomatizado.SeleniumUtils
         /// </summary>
         /// <param name="webDriver">Driver atual.</param>
         /// <param name="referencia">Referência do elemento para onde o texto será enviado.</param>
-        /// <param name="texto">Texto a ser inserido.</param>
+        /// <param name="texto">Texto a ser enviado.</param>
         public static void EnviarTexto(IWebDriver webDriver, By referencia, string texto)
         {
             var elementoCarregado = EsperaElementoFicarClicavel(webDriver, referencia);
