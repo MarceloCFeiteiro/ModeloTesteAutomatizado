@@ -15,7 +15,7 @@ namespace ModeloTesteAutomatizado.Helpers
             switch (webDriverEnum)
             {
                 case WebDriverEnum.Chrome:
-                    return new ChromeDriver(path, new ChromeOptions());
+                    return new ChromeDriver(new ChromeOptions());
 
                 case WebDriverEnum.HeadlessChrome:
 
