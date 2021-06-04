@@ -1,14 +1,16 @@
 ﻿using ModeloTesteAutomatizado.Data;
+using System;
 using System.IO;
 
 namespace ModeloTesteAutomatizado.Helpers
 {
     public static class ManipularArquivoHelper
     {
+
         /// <summary>
         /// Representa o caminho para o arquivo;
         /// </summary>
-        private static readonly string Caminho = @"C:\Users\Eshi\source\repos\ModeloTesteAutomatizado\ModeloTesteAutomatizado\Data\Files\";
+        private static readonly string Caminho = CriaCaminho();
 
         /// <summary>
         /// Representa o nome do arquivo
@@ -22,7 +24,7 @@ namespace ModeloTesteAutomatizado.Helpers
         public static void SalvarNoArquivoEmFormatoJson(Usuario obj)
         {
             string texto = ConversorJsonHelper<Usuario>.EntidadeParaJson(obj);
-
+            
             File.WriteAllText(string.Concat(Caminho, NomeArquivo), texto);
         }
 
@@ -35,6 +37,29 @@ namespace ModeloTesteAutomatizado.Helpers
             string texto = File.ReadAllText(string.Concat(Caminho, NomeArquivo));
 
             return ConversorJsonHelper<Usuario>.JsonParaEntidade(texto);
+        }
+
+        private static string CriaCaminho()
+        {
+            var caminho = Environment.CurrentDirectory; ;
+
+            var temp = caminho.Split('\\');
+
+            var path = string.Empty;
+
+            foreach (var item in temp)
+            {
+                if (item.Equals("bin"))
+                {
+                    path = path[1..];
+                    break;
+                }
+                path = string.Concat(path, "\\", item);
+            } 
+
+
+
+            return path + @"\Data\Files\";
         }
     }
 }

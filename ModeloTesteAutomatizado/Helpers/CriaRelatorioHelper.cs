@@ -52,6 +52,7 @@ namespace ModeloTesteAutomatizado.Helpers
                 var status = TestContext.CurrentContext.Result.Outcome.Status;
                 var stacktrace = "" + TestContext.CurrentContext.Result.StackTrace + "";
                 var errorMessage = TestContext.CurrentContext.Result.Message;
+
                 Status logstatus;
                 switch (status)
                 {
