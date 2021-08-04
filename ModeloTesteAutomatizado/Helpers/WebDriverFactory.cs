@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 using System;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace ModeloTesteAutomatizado.Helpers
 {
@@ -19,7 +20,9 @@ namespace ModeloTesteAutomatizado.Helpers
 
                 case WebDriverEnum.HeadlessChrome:
 
-                    ChromeOptions opt = new ChromeOptions();
+                    new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+
+                    ChromeOptions opt = new();
                     opt.AddArgument("--headless");
                     return  new ChromeDriver(opt);
 
